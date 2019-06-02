@@ -1,0 +1,77 @@
+[
+  {
+    "type": "malice",
+    "replaces": [
+      "justice",
+      "neutrality"
+    ],
+    "combines": [
+      "conviction",
+      "imitation"
+    ]
+  },
+  {
+    "type": "conviction",
+    "replaces": [
+      "liberation",
+      "neutrality"
+    ],
+    "combines": [
+      "malice",
+      "justice"
+    ]
+  },
+  {
+    "type": "liberation",
+    "replaces": [
+      "justice",
+      "conviction"
+    ],
+    "combines": [
+      "neutrality",
+      "malice"
+    ]
+  },
+  {
+    "type": "justice",
+    "replaces": [
+      "liberation",
+      "neutrality",
+      "malice"
+    ],
+    "combines": [
+      "conviction"
+    ]
+  },
+  {
+    "type": "neutrality",
+    "replaces": [
+      "malice",
+      "conviction",
+      "justice"
+    ],
+    "combines": [
+      "liberation"
+    ]
+  },
+  {
+    "type": "imitation",
+    "replaces": [
+      "authentic"
+    ],
+    "combines": [
+      "justice",
+      "liberation"
+    ]
+  },
+  {
+    "type": "authentic",
+    "replaces": [
+      "imitation"
+    ],
+    "combines": [
+      "conviction",
+      "liberation"
+    ]
+  }
+]

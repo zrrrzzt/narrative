@@ -24,3 +24,15 @@ test(`it can't replace`, t => {
   const liberation = { type: 'liberation' }
   t.is(false, malice.canReplace(liberation), `Malice can't be replaced by liberation`)
 })
+
+test('it can combine', t => {
+  const malice = new Card(cardOptions)
+  const conviction = { type: 'conviction' }
+  t.is(true, malice.canCombine(conviction, 'Malice can be combined with conviction'))
+})
+
+test(`it can't combine`, t => {
+  const malice = new Card(cardOptions)
+  const liberation = { type: 'liberation' }
+  t.is(false, malice.canCombine(liberation, `Malice can't be combined with liberation`))
+})
