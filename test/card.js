@@ -36,3 +36,14 @@ test(`it can't combine`, t => {
   const liberation = { type: 'liberation' }
   t.is(false, malice.canCombine(liberation, `Malice can't be combined with liberation`))
 })
+
+test(`You can't see card if not face up`, t => {
+  const malice = new Card(cardOptions)
+  t.is('X', malice.showCard(), 'Card is returned as X')
+})
+
+test(`You can see card if it is face up`, t => {
+  const malice = new Card(cardOptions)
+  malice.turnCard()
+  t.is('malice', malice.showCard(), 'Card is returned as malice')
+})
