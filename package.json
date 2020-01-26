@@ -28,7 +28,7 @@
   "homepage": "https://github.com/zrrrzzt/narrative#readme",
   "devDependencies": {
     "ava": "3.1.0",
-    "coveralls": "3.0.7",
+    "coveralls": "3.0.9",
     "nyc": "15.0.0",
     "standard": "14.3.1"
   },
